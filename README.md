@@ -1,87 +1,36 @@
-# Welcome to React Router!
+# GitHub Gist Clone - React Basics Classroom Project
 
-A modern, production-ready template for building full-stack React applications using React Router.
+## Project Overview
+A GitHub Gist clone application built with React, TypeScript, and Firebase as part of a React basics classroom curriculum. This full-stack project demonstrates modern web development techniques while teaching fundamental React concepts.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## Technologies Used
+- **Frontend**: React, TypeScript, Shadcn UI components
+- **Styling**: Tailwind CSS
+- **Routing**: React Router
+- **Backend**: Firebase (Authentication, Firestore, Storage)
+- **AI Integration**: Powered by AI for enhanced functionality
 
 ## Features
+- User authentication (login/signup) via Firebase
+- Create, edit, and delete gists (code snippets)
+- Markdown support for gist descriptions
+- Responsive design using Tailwind CSS
+- Type-safe development with TypeScript
+- Modern UI components from Shadcn
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## Classroom Objectives
+This project serves as an educational resource to teach:
+- React fundamentals and best practices
+- TypeScript integration with React
+- Full-stack development with Firebase
+- Modern UI development using component libraries
+- AI-powered application features
 
 ## Getting Started
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Set up Firebase configuration
+4. Run development server: `npm run dev`
 
-### Installation
-
-Install the dependencies:
-
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+## Contribution
+This project is part of an educational curriculum. While primarily for classroom use, constructive feedback and suggestions are welcome.
