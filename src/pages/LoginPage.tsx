@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -11,13 +11,11 @@ import { LoginHeader } from "@/features/login/LoginHeader";
 import { Divider } from "@/features/shared/ui/divider";
 import { GoogleLoginButton } from "@/features/shared/google-login/GoogleLoginButton";
 import { LoginForm } from "@/features/login/LoginForm";
+import { Link } from "react-router";
+
+// TODO: work on the reset password page
 
 export default function LoginPage() {
-  const handleCreateAccount = (e: React.MouseEvent) => {
-    e.preventDefault();
-    console.log("Create account clicked");
-  };
-
   const handleForgotPassword = (e: React.MouseEvent) => {
     e.preventDefault();
     console.log("Forgot password clicked");
@@ -44,14 +42,16 @@ export default function LoginPage() {
             <Divider />
             <GoogleLoginButton />
 
-            <Button
-              type="button"
-              variant="outline"
-              className="w-full border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400 font-medium py-2.5 transition-colors"
-              onClick={handleCreateAccount}
+            <Link
+              to="/register"
+              className={buttonVariants({
+                variant: "outline",
+                className:
+                  "w-full border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400 font-medium py-2.5 transition-colors",
+              })}
             >
               Create account
-            </Button>
+            </Link>
 
             <div className="text-center">
               <button
