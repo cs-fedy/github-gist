@@ -5,6 +5,7 @@ import { RegistrationPage } from "./pages/RegistrationPage";
 import { HomePage } from "./pages/HomePage";
 import CreateGistPage from "./pages/CreateGistPage";
 import { GistsPage } from "./pages/GistsPage";
+import { GistDetailPage } from "./pages/GistDetailPage";
 import AuthProvider from "./context/auth";
 import { LoggedInGuard } from "./guards/LoggedInGuard";
 import { NotLoggedInGuard } from "./guards/NotLoggedInGuard";
@@ -57,6 +58,16 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <GistsPage />,
+      },
+    ],
+  },
+  {
+    path: "/gist/:id",
+    element: <LoggedInGuard />,
+    children: [
+      {
+        index: true,
+        element: <GistDetailPage />,
       },
     ],
   },

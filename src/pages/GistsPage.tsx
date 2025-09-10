@@ -247,10 +247,13 @@ export function GistsPage() {
 
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-4 text-sm text-gray-600">
-                        <button className="flex items-center hover:text-blue-600">
+                        <Link
+                          to={`/gist/${gist.id}`}
+                          className="flex items-center hover:text-blue-600"
+                        >
                           <Eye className="h-4 w-4 mr-1" />
                           View
-                        </button>
+                        </Link>
                         <button className="flex items-center hover:text-blue-600">
                           <Star className="h-4 w-4 mr-1" />
                           Star
