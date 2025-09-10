@@ -3,6 +3,7 @@ import { RouterProvider } from "react-router/dom";
 import LoginPage from "./pages/LoginPage";
 import { RegistrationPage } from "./pages/RegistrationPage";
 import { HomePage } from "./pages/HomePage";
+import CreateGistPage from "./pages/CreateGistPage";
 import AuthProvider from "./context/auth";
 import { LoggedInGuard } from "./guards/LoggedInGuard";
 import { NotLoggedInGuard } from "./guards/NotLoggedInGuard";
@@ -35,6 +36,16 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <HomePage />,
+      },
+    ],
+  },
+  {
+    path: "/create",
+    element: <LoggedInGuard />,
+    children: [
+      {
+        index: true,
+        element: <CreateGistPage />,
       },
     ],
   },
