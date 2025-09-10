@@ -4,6 +4,7 @@ import LoginPage from "./pages/LoginPage";
 import { RegistrationPage } from "./pages/RegistrationPage";
 import { HomePage } from "./pages/HomePage";
 import CreateGistPage from "./pages/CreateGistPage";
+import { GistsPage } from "./pages/GistsPage";
 import AuthProvider from "./context/auth";
 import { LoggedInGuard } from "./guards/LoggedInGuard";
 import { NotLoggedInGuard } from "./guards/NotLoggedInGuard";
@@ -46,6 +47,16 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <CreateGistPage />,
+      },
+    ],
+  },
+  {
+    path: "/gists",
+    element: <LoggedInGuard />,
+    children: [
+      {
+        index: true,
+        element: <GistsPage />,
       },
     ],
   },

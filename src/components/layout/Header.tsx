@@ -19,12 +19,12 @@ export default function Header() {
               </span>
             </div>
             <nav className="hidden md:flex space-x-6">
-              <a
-                href="#"
+              <Link
+                to="/gists"
                 className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium"
               >
                 Your gists
-              </a>
+              </Link>
               <a
                 href="#"
                 className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium"
